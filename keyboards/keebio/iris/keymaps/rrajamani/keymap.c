@@ -12,8 +12,8 @@ enum custom_layers {
 };
 
 enum custom_keycodes {
-  COLEMAK = SAFE_RANGE,
-  QWERTY,
+  QWERTY = SAFE_RANGE,
+  COLEMAK,
   LOWER,
   RAISE,
   MOUSECURSOR,
@@ -33,7 +33,6 @@ enum custom_keycodes {
 #define KC_RECE DYN_REC_STOP
 #define KC_RECP DYN_MACRO_PLAY1
 #define KC_RSET RESET
-#define KEND    KC_END
 
 #define KC_SCAP SFT_T(KC_CAPS)            // Tap for Caps Lock, hold for Shift
 #define KC_CTLE CTL_T(KC_ESC)             // Tap for Escape, hold for Control
@@ -107,11 +106,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
          , F1 , F2 , F3 , F4 , F5 ,                F6 , F7 , F8 , F9 ,F10 ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         , B1 ,MS_U, B2 ,    ,WH_U,               HOME,PGDN,PGUP,KEND,F11 ,DEL ,
+         ,BTN1,MS_U,BTN2,    ,WH_U,               HOME,PGDN,PGUP,END ,F11 ,DEL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,MS_L,MS_D,MS_R,    ,WH_D,               LEFT,DOWN, UP ,RGHT,F11 ,    ,
+         ,MS_L,MS_D,MS_R,    ,WH_D,               LEFT,DOWN, UP ,RGHT,F12 ,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-         ,    ,    ,    ,    ,    ,LBRC,     RBRC,    ,    ,    ,         ,    ,
+         ,    ,    ,    ,    ,    ,LBRC,     RBRC,    ,    ,    ,    ,    ,    ,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,    ,             ,    ,
   //                  `----+----+----'        `----+----+----'
